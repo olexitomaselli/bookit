@@ -1,4 +1,5 @@
 import Header   from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
 
@@ -15,8 +16,9 @@ export default function RootLayout({ children }) {
       <body className={ inter.className }>
         <Header />
         <main className="mix-auto max-w-7xl px-4 pu-6 sm:px-6 lg:px-8 ">
-            {children}
-         </main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
